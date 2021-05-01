@@ -10,8 +10,9 @@ body {
   margin-left: auto;
   margin-right: auto;
   height: 100vh;
-  background: #edc7a9;
+  background-color: #edc7a9;
   background-image: linear-gradient(180deg, #ffffff, #ffffff00);
+  transition: background-color 0.5s;
 }
 
 h1, h2 {
@@ -24,6 +25,10 @@ h1 {
 
 h2 {
   font-size: 10vmin;
+}
+
+section a {
+  color: black
 }
 
 section {
@@ -41,6 +46,7 @@ section div.circle {
   background-color: #3e78ed;
   border-radius: 50%;
   display: inline-block; /* se posiciona como texto :0 */
+  transition: background-color 0.5s;
 }
 
 footer {
@@ -55,4 +61,5 @@ footer {
 
 footer img {
   margin: 0 10px;
+  cursor: pointer;
 }
