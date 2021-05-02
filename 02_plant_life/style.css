@@ -10,6 +10,11 @@
   url("assets/youngserif.woff");
 }
 
+@keyframes fade {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
 body {
   font-family: "IBM Plex Mono";
   font-size: 16px;
@@ -63,4 +68,60 @@ a.toggle-nav {
 a.toggle-nav img {
   margin: 0 10px 0 0;
   vertical-align: middle;
+}
+
+section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+section div {
+  width: 350px;
+}
+
+section div.content {
+  margin: 0 0 0 60px;
+}
+
+h1 {
+  font-size: 48px;
+  font-family: 'Young Serif';
+  line-height: 1.2;
+  margin: 0;
+}
+
+p {
+  margin: 20px 0 20px 0;
+}
+
+.button {
+  display: inline-block; /*mejor para botones poder darle tamaño*/
+  background-color: #00b98d;
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px;
+  border-radius: 4px;
+}
+
+div.slides {
+  height: 475px;
+  position: relative;
+}
+
+div.slides img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: transform 0.5s, box-shadow 0.5s;
+  pointer-events: none;
+}
+
+div.slides img:first-child {
+  z-index: 1;
+}
+
+div.slides:hover img {
+ box-shadow: 0 0 8px rgba(0,0,0, 0.1);
 }
