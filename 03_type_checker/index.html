@@ -17,8 +17,21 @@
       <input type="text" name="sentence" placeholder="The quick brown fox…">
     </div>
     <div class="option">
+      <label>Typeface</label>
+      <select name="typeface" id="">
+        <option value="Barlow">Barlow</option>
+        <option value="Fira Sans">Fira Sans</option>
+        <option value="Jost">Jost</option>
+        <option value="Trirong">Trirong</option>
+      </select>
+    </div>
+    <div class="option">
       <label>Type size <span class="typesize-output">64px</span></label>
       <input type="range" name="typesize" min=12 max=200 default=64>
+    </div>
+    <div class="option">
+      <label>Font weight <span class="font-weight-output">400</span></label>
+      <input type="range" name="font-weight" min=100 max=900 default=400 step=100>
     </div>
     <div class="option">
       <label>Leading<span class="leading-output">1.5</span></label>
@@ -27,6 +40,15 @@
     <div class="option option-checkbox">
       <label>Italic</label>
       <input type="checkbox" name="italic">
+    </div>
+    <div class="option">
+      <label>Color</label>
+      <div class="colors">
+        <div style="background-color: #2a2a2a; color: #ffffff" class="selected">a</div>
+        <div style="background-color: #ffffff; color: #2a2a2a">a</div>
+        <div style="background-color: #63ff03; color: #2a2a2a">a</div>
+        <div style="background-color: #ee0073; color: #ffffff">a</div>
+      </div>
     </div>
   </section>
   <textarea class="output">The quick brown fox jumps over the lazy dog</textarea>

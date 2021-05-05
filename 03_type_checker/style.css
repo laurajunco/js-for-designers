@@ -29,9 +29,10 @@ body {
   font-family: "Faune";
   background-color: #2a2a2a;
   color: white;
-  margin: 40px 40px 40px 320px;
+  margin: 0 0 0 280px;
   font-size: 16px;
   line-height: 1.5;
+  overflow-y: hidden;
 }
 
 h1 {
@@ -93,5 +94,48 @@ textarea.output {
   color: white;
   border: none;
   outline: none;
-  min-height: 90vh;
+  min-height: 100vh;
+  padding: 40px;
+  transition: background-color, color 0.5s;
+}
+
+select {
+  width: 100%;
+}
+
+input[type="checkbox"] {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  background-color: #575757;
+  border-radius: 50%;
+  border: 2px #575757 solid;
+  outline: none;
+  transition: background-color 0.25s;
+  cursor: pointer;
+}
+
+input[type="checkbox"]:checked {
+  background-color: white;
+  
+}
+
+div.colors {
+  display: flex;
+}
+
+div.colors div {
+  width: 30px;
+  height: 30px;
+  border: 2px solid rgba(255,255,255,0.25);
+  border-radius: 50%;
+  text-align: center;
+  margin: 5px 10px 0 0;
+  transition: border 0.25s;
+  cursor: pointer;
+}
+
+div.colors div.selected {
+  border: 2px solid white;
 }
