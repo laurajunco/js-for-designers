@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Trirong:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 @font-face {
   font-family: "Faune";
   font-weight: 400;
@@ -49,12 +51,23 @@ section.options {
 }
 
 div.option {
-  margin: 15px 0 0 0;
+  margin: 20px 0 0 0;
+}
+
+div.option-checkbox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 label {
   display: block;
   margin: 0 0 5px 0;
+}
+
+label span {
+  float: right;
+  font-style: italic;
 }
 
 input[type="text"] {
@@ -67,6 +80,18 @@ input[type="text"] {
   padding: 5px 7px;
 }
 
-.output {
+input[type="range"] {
+  width: 100%
+}
+
+textarea.output {
+  line-height: 1.5;
+  font-family: "Faune";
   font-size: 64px;
+  width: 100%;
+  background: none;
+  color: white;
+  border: none;
+  outline: none;
+  min-height: 90vh;
 }
