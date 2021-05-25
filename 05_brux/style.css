@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,500;1,900&display=swap');
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+
+
+body {
+  font-family: 'Rubik', Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.5;
+  color: #052837;
+  margin: 0;
+}
+
+h1 {
+  font-size: 24px;
+  font-weight: 900;
+  font-style: italic;
+}
+
+header {
+  position: fixed;
+  background-color: #c7f2f1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 48px 0 48px;
+}
+
+header nav {
+  text-align: right;
+}
+
+header a {
+  margin: 0 0 0 16px;
+}
+
+header h1,
+header nav {
+flex: 1;
+}
