@@ -1,15 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,500;1,900&display=swap');
 
-* {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  -webkit-font-smoothing: antialiased;
-  text-rendering: optimizeLegibility;
-}
-
-
-
 body {
   font-family: 'Rubik', Arial, sans-serif;
   font-size: 18px;
@@ -55,6 +45,7 @@ header {
   align-items: center;
   justify-content: space-between;
   padding: 0 48px 0 48px;
+  height: 64px;
 }
 
 header nav {
@@ -80,4 +71,39 @@ a.button {
 
 p {
   margin: 1.5em 0 1.5em 0;
+}
+
+section.hero {
+  margin: 64px 0 0 0;
+  padding: 160px 48px 160px 48px;
+  background-color: #c7f2f1;
+  background-image: url('assets/hero.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 100% 50%;
+}
+
+section.hero h2,
+section.hero p {
+  max-width: 450px;
+}
+
+section.content {
+  margin: 48px;
+  display: flex;
+  flex-direction: row;
+}
+
+section.content div.content {
+  flex: 0 0 400px; /* dont grow, dont shrink, start at 400px*/
+  margin: 0 0 0 40px;
+}
+
+section.content:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+section.content:nth-child(even) div.content{
+  flex-direction: row-reverse;
+  margin: 0 40px 0 0;
 }
