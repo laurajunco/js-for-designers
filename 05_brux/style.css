@@ -25,6 +25,23 @@ h1 {
   font-style: italic;
 }
 
+h2 {
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 1.25;
+}
+
+h3 {
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 1.25;
+}
+
+a {
+  color: #052837;
+  text-decoration: none;
+}
+
 header {
   position: fixed;
   background-color: #c7f2f1;
@@ -51,4 +68,16 @@ header a {
 header h1,
 header nav {
 flex: 1;
+}
+
+a.button {
+  display: inline-block; /* para poder ponerle margin y padding */
+  background-color: #052837;
+  color: #c7f2f1;
+  border-radius: 50px;
+  padding: 0.5em 1.5em 0.5em 1.5em;
+}
+
+p {
+  margin: 1.5em 0 1.5em 0;
 }
