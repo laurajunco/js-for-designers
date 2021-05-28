@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,500;1,900&display=swap');
 
+@keyframes fade {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
 body {
   font-family: 'Rubik', Arial, sans-serif;
   font-size: 18px;
@@ -111,4 +116,8 @@ section.content:nth-child(even) {
 section.content:nth-child(even) div.content{
   flex-direction: row-reverse;
   margin: 0 40px 0 0;
+}
+
+h2, h3, p, section img, a.button {
+  opacity: 0;
 }
